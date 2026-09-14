@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dipak Pariyar — ACCA student, accounting & finance, public speaking and professional development.">
+<meta name="theme-color" content="#111111">
+<title>Dipak Pariyar | Accounting & Finance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --black:#111111;--charcoal:#1b1b1b;--white:#fff;--paper:#f7f6f3;
+ --muted:#6c6b68;--line:#dedcd6;--gold:#b38a3b;--gold2:#d2b16b;
+ --max:1180px;--radius:20px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--black);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav{position:sticky;top:0;z-index:100;background:rgba(17,17,17,.94);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:-.02em}.logo em{font-style:normal;color:var(--gold2)}
+.navlinks{display:flex;gap:26px;font-size:14px;color:#ddd}.navlinks a:hover{color:#fff}
+.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{background:var(--black);color:#fff;overflow:hidden}
+.hero-grid{min-height:690px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--gold2);font-weight:700}
+h1{font-family:"Playfair Display",serif;font-size:clamp(52px,7vw,92px);line-height:.98;letter-spacing:-.045em;margin:18px 0 22px}
+.hero h1 span{color:var(--gold2)}
+.hero-copy{font-size:18px;line-height:1.7;color:#d5d5d5;max-width:660px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;font-size:14px;border:1px solid #3a3a3a}
+.btn.primary{background:#fff;color:#111;border-color:#fff}.btn.secondary{color:#fff;background:transparent}
+.btn:hover{transform:translateY(-2px)}
+.hero-photo{height:560px;position:relative;display:flex;align-items:end;justify-content:center}
+.hero-photo:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;background:#252525;top:60px}
+.hero-photo img{position:relative;width:100%;height:100%;object-fit:cover;object-position:center 24%;border-radius:0 0 26px 26px;filter:saturate(.92)}
+main{padding:70px 0}.section{margin-bottom:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px;box-shadow:0 10px 35px rgba(0,0,0,.045)}
+.section-label{font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:var(--gold);font-weight:800}
+h2{font-family:"Playfair Display",serif;font-size:38px;line-height:1.1;letter-spacing:-.03em;margin:7px 0 20px}
+h3{font-size:18px;margin:0 0 8px}.muted{color:var(--muted)}
+.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:42px;align-items:center}
+.about-img{width:100%;height:380px;object-fit:cover;border-radius:16px}
+.quote{border-left:3px solid var(--gold);padding-left:18px;color:#383735;font-style:italic}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tile{padding:25px;background:#fbfaf7;border:1px solid var(--line);border-radius:16px}
+.icon{font-size:23px;margin-bottom:12px}
+.timeline{display:grid;gap:0}
+.tline{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line)}
+.tline:last-child{border-bottom:0}.year{font-size:12px;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:.08em}
+.badge{display:inline-block;font-size:11px;font-weight:800;background:#f1eadb;color:#72551d;padding:5px 9px;border-radius:999px;margin:2px 0 9px}
+.paper-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.paper{border:1px solid var(--line);padding:14px 15px;border-radius:12px;background:#fff;display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.paper b{font-size:12px;color:#555}
+.paper.passed b{color:#7b5d22}.paper.wait b{color:#444}
+.acca-head{display:flex;justify-content:space-between;gap:20px;align-items:start;margin-bottom:22px}
+.number{font-family:"Playfair Display",serif;font-size:56px;line-height:1;color:var(--gold)}
+.gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:15px;display:block}
+.g-big{height:520px}.g-stack{display:grid;grid-template-rows:1fr 1fr;gap:16px}.g-stack img{min-height:0}
+.social-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.social{border:1px solid var(--line);background:#fff;padding:10px 13px;border-radius:10px;font-size:13px;font-weight:700}
+.social:hover{border-color:var(--gold);color:#72551d}
+.contact{background:var(--black);color:#fff}.contact .muted{color:#bdbdbd}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact a{display:block;padding:15px 0;border-bottom:1px solid #333}
+.contact small{display:block;color:#999;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:3px}
+footer{padding:0 0 45px;color:#777;font-size:13px;display:flex;justify-content:space-between}
+@media(max-width:850px){
+ .container{width:min(var(--max),calc(100% - 28px))}
+ .navin{height:64px}.navlinks{display:none}.menu{display:block}
+ .nav.open .navlinks{display:flex;position:absolute;left:0;right:0;top:64px;background:#111;padding:16px 20px;flex-direction:column;gap:15px;border-top:1px solid #333}
+ .hero-grid{grid-template-columns:1fr;min-height:auto;padding:70px 0 0;text-align:center}.hero-copy{margin:auto}.actions{justify-content:center}
+ .hero-photo{height:410px;order:-1}.hero-photo:before{width:270px;height:270px;top:35px}.hero-photo img{width:90%;border-radius:0 0 20px 20px}
+ main{padding:42px 0}.card{padding:25px}.about,.grid2,.grid3,.contact-grid{grid-template-columns:1fr}.about-img{height:330px}
+ .tline{grid-template-columns:1fr;gap:4px}.paper-grid{grid-template-columns:1fr}.acca-head{display:block}.number{margin-top:10px}
+ .gallery{grid-template-columns:1fr}.g-big{height:390px}.g-stack{grid-template-rows:300px 300px}
+ footer{flex-direction:column;gap:8px}
+}
+
+.form-card{background:#f0ede5;border-color:#d9d2c4}
+.form-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.form-action{display:flex;flex-direction:column;align-items:flex-start}
+.dark-btn{background:#111;color:#fff;border-color:#111}
+.form-note{font-size:12px;color:#777;margin:10px 0 0}
+@media(max-width:850px){.form-layout{grid-template-columns:1fr}.form-action{align-items:stretch}.form-action .btn{text-align:center}}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+ <div class="container navin">
+  <a class="logo" href="#">Dipak <em>Pariyar</em></a>
+  <button class="menu" id="menu" aria-label="Menu">☰</button>
+  <div class="navlinks">
+   <a href="#about">About</a><a href="#education">Education</a><a href="#acca">ACCA</a>
+   <a href="#speaking">Speaking</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">ACCA • Accounting & Finance • Public Speaking</div>
+   <h1>Dipak <span>Pariyar</span></h1>
+   <p class="hero-copy">Accounting and finance professional in development, building expertise through ACCA and BBS while developing a strong voice in public speaking, leadership and inclusive economic development.</p>
+   <div class="actions">
+    <a class="btn primary" href="#acca">Explore my journey</a>
+    <a class="btn secondary" href="assets/Dipak-Pariyar-CV.pdf" target="_blank">View CV</a>
+   </div>
+  </div>
+  <div class="hero-photo"><img src="assets/hero-speaking.jpg" alt="Dipak Pariyar speaking at a public speaking event"></div>
+ </div>
+</header>
+
+<main>
+ <div class="container">
+
+  <section id="about" class="section">
+   <div class="card about">
+    <img class="about-img" src="assets/1.20.jpeg" alt="Dipak Pariyar public speaking">
+    <div>
+     <div class="section-label">About me</div>
+     <h2>Professional growth with purpose.</h2>
+     <p>I am <strong>Dipak Pariyar</strong>, an ACCA student and Bachelor of Business Studies student based in Nepal. I am developing a career foundation in accounting, finance, audit and taxation while strengthening practical communication and leadership skills.</p>
+     <p>I also care about social inclusion, good governance, youth participation and economic empowerment. My aim is to connect professional knowledge with meaningful contribution to society.</p>
+     <p class="quote">“Combining professional expertise with social responsibility and equitable empowerment.”</p>
+     <div class="social-row">
+      <a class="social" href="https://www.linkedin.com/in/dipakpariyar" target="_blank">LinkedIn</a>
+      <a class="social" href="https://www.facebook.com/the.dipendra.sonam01" target="_blank">Facebook</a>
+      <a class="social" href="https://www.instagram.com/dipendra.sonam/" target="_blank">Instagram</a>
+      <a class="social" href="https://www.tiktok.com/@dipendra.sonam" target="_blank">TikTok</a>
+      <a class="social" href="https://x.com/pariyardipak_" target="_blank">X</a>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="education" class="section">
+   <div class="card">
+    <div class="section-label">Education</div><h2>Academic journey</h2>
+    <div class="timeline">
+     <div class="tline"><div class="year">2071–2076</div><div><h3>Nobelist Boarding School, Jajarkot</h3><p class="muted">School education.</p></div></div>
+     <div class="tline"><div class="year">2077–2078</div><div><h3>Shree Krishna General Secondary School, Birendranagar, Ittram, Surkhet</h3><p class="muted">Classes 9–10.</p></div></div>
+     <div class="tline"><div class="year">2022–2024<br>2079–2080</div><div><h3>Shree Jana Model Secondary School, Surkhet</h3><span class="badge">NEB • Management</span><p class="muted"><strong>Grade 12 GPA:</strong> 3.60 / 4.00 — Faculty Topper & 2nd School Rank<br><strong>Grade 11 GPA:</strong> 3.67 / 4.00</p></div></div>
+     <div class="tline"><div class="year">2024–Present</div><div><h3>Bachelor of Business Studies (BBS)</h3><p class="muted"><strong>Nepal Commerce Campus, Tribhuvan University, Kathmandu.</strong><br>First-year examinations successfully completed; currently pursuing the second year.</p></div></div>
+    </div>
+   </div>
+  </section>
+
+  <section id="acca" class="section">
+   <div class="card">
+    <div class="acca-head">
+     <div><div class="section-label">Professional qualification</div><h2>ACCA journey</h2>
+      <p class="muted"><strong>Association of Chartered Certified Accountants</strong> • Certified College of Accountancy (CCA), Kathmandu • 2024–Present</p>
+     </div>
+     <div class="number">8</div>
+    </div>
+    <p><span class="badge">8 papers passed</span> <span class="badge">AA result awaiting</span></p>
+    <div class="paper-grid">
+     <div class="paper passed"><span>Financial Accounting (FFA)</span><b>83%</b></div>
+     <div class="paper passed"><span>Management Accounting (FMA)</span><b>81%</b></div>
+     <div class="paper passed"><span>Business & Technology (FBT)</span><b>77%</b></div>
+     <div class="paper passed"><span>Corporate & Business Law (LW-ENG)</span><b>74%</b></div>
+     <div class="paper passed"><span>Financial Management (FM)</span><b>Passed</b></div>
+     <div class="paper passed"><span>Financial Reporting (FR)</span><b>Passed</b></div>
+     <div class="paper passed"><span>Taxation (TX-UK)</span><b>Passed</b></div>
+     <div class="paper passed"><span>Performance Management (PM)</span><b>Passed</b></div>
+     <div class="paper wait"><span>Audit & Assurance (AA)</span><b>Exam sat • Result awaiting</b></div>
+    </div>
+    <div class="grid2" style="margin-top:18px">
+      <div class="tile"><h3>Professional development</h3><p class="muted">Ethics and Professional Skills Module (EPSM) completed. Foundations in Professionalism (FiP) completed.</p></div>
+      <div class="tile"><h3>Next stage</h3><p class="muted">Continuing the ACCA pathway while building practical accounting, audit and finance experience.</p></div>
+    </div>
+   </div>
+  </section>
+
+  <section id="speaking" class="section">
+   <div class="card">
+    <div class="section-label">Public speaking</div><h2>A voice built through experience.</h2>
+    <div class="gallery">
+     <img class="g-big" src="assets/hero-speaking.jpg" alt="Dipak Pariyar on stage">
+     <div class="g-stack">
+      <img src="assets/speaking-closeup.jpg" alt="Dipak Pariyar speaking close-up">
+      <img src="assets/professional-social.jpg" alt="Dipak Pariyar at a youth event">
+     </div>
+    </div>
+    <div class="grid2" style="margin-top:18px">
+      <div class="tile"><h3>National Public Speaking Competition</h3><p class="muted"><strong>2nd Runner-Up / Third Position</strong> — Public Speech Nepal, Season 2 (2082 B.S.).</p></div>
+      <div class="tile"><h3>National Model Parliament</h3><p class="muted">Participant in the National Model Parliament Program (2082 B.S.).</p></div>
+    </div>
+   </div>
+  </section>
+
+  <section id="achievements" class="section">
+   <div class="grid2">
+    <div class="card"><div class="section-label">Leadership</div><h2>Leadership & achievement</h2>
+      <ul class="muted">
+       <li>School Captain & House Captain — student leadership and extracurricular coordination.</li>
+       <li>Program Coordinator & Chief Announcer — annual school events and ECA programs.</li>
+       <li>Public speaking and youth-program participation.</li>
+      </ul>
+    </div>
+    <div class="card"><div class="section-label">Community</div><h2>Community engagement</h2>
+      <p class="muted">Community awareness and youth engagement experience in Kushe Rural Municipality, Jajarkot, including programs focused on education, youth participation and social inclusion.</p>
+      <p class="muted">Areas of interest: public policy, political economy, corporate governance, financial markets, social justice, good governance, accounting and auditing.</p>
+    </div>
+   </div>
+  </section>
+
+  <section class="section">
+   <div class="card">
+    <div class="section-label">Capabilities</div><h2>Core skills</h2>
+    <div class="grid3">
+      <div class="tile"><h3>Accounting & Audit</h3><p class="muted">Financial accounting, financial reporting, financial analysis, accounting and audit fundamentals.</p></div>
+      <div class="tile"><h3>Tools</h3><p class="muted">Xero Accounting Software, MS Excel, MS Word and MS PowerPoint.</p></div>
+      <div class="tile"><h3>Professional skills</h3><p class="muted">Leadership, communication, public speaking, teamwork, problem solving and professional ethics.</p></div>
+    </div>
+   </div>
+  </section>
+
+  <section id="inquiry" class="section">
+   <div class="card form-card">
+    <div class="form-layout">
+      <div>
+       <div class="section-label">Professional inquiry</div>
+       <h2>Have an inquiry?</h2>
+       <p class="muted">For academic collaboration, accounting & finance opportunities, public speaking, professional networking or other inquiries, use the official inquiry form.</p>
+      </div>
+      <div class="form-action">
+       <a id="googleFormBtn" class="btn primary dark-btn" href="#" target="_blank" rel="noopener">Open inquiry form ↗</a>
+       <p id="formNote" class="form-note">Google Form link will be activated here.</p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="contact" class="section">
+   <div class="card contact">
+    <div class="contact-grid">
+      <div><div class="section-label">Contact</div><h2>Let's connect.</h2><p class="muted">For academic, professional, public-speaking or collaboration inquiries.</p></div>
+      <div>
+       <a href="mailto:info@pariyardipak.com.np"><small>General inquiry</small>info@pariyardipak.com.np</a>
+       <a href="mailto:dipak@pariyardipak.com.np"><small>Personal</small>dipak@pariyardipak.com.np</a>
+       <a href="https://www.linkedin.com/in/dipakpariyar" target="_blank"><small>LinkedIn</small>linkedin.com/in/dipakpariyar</a>
+       <a href="https://wa.me/9779868353803" target="_blank"><small>WhatsApp</small>pariyar.dipak</a>
+      </div>
+    </div>
+   </div>
+  </section>
+
+ </div>
+</main>
+
+<footer class="container"><span>© <span id="year"></span> Dipak Pariyar</span><span>pariyardipak.com.np</span></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const nav=document.getElementById("nav");
+document.getElementById("menu").onclick=()=>nav.classList.toggle("open");
+document.querySelectorAll(".navlinks a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
+</script>
+
+<script src="config.js"></script>
+<script>
+(function(){
+  const btn = document.getElementById("googleFormBtn");
+  const note = document.getElementById("formNote");
+  if (typeof GOOGLE_FORM_URL !== "undefined" && GOOGLE_FORM_URL.trim()) {
+    btn.href = GOOGLE_FORM_URL;
+    note.textContent = "Opens the official Google Form in a new tab.";
+  } else {
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+      alert("Google Form link is not configured yet. Add it in config.js.");
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
